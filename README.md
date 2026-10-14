@@ -1,0 +1,2 @@
+# Bank-Customer-Churn-Prediction-system
+End-to-end Bank Customer Churn Prediction using Python and MLOps practices, including MLflow, Docker, FastAPI, CI/CD, Kubernetes, Prometheus, Grafana, and Terraform.
