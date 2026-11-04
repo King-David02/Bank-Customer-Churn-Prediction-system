@@ -28,7 +28,7 @@ class EnsembleConfig(BaseModel):
     "Ensemble Model congig"
     
     voting:str = Field("soft", pattern="^hard | soft$")
-    weight: float[List] = [0.6, 0.4] 
+    weight: List[float] = [0.6, 0.4] 
 
 class AdvancedModelConfig(BaseModel):
     "Config for advanced model"
@@ -57,7 +57,7 @@ class ModelConfig(BaseModel):
 class DataConfig(BaseModel):
     "Data config"
     
-    target_column: List[str] = "Exited"
+    target_column: str = "Exited"
     categorical_features: List[str] = []
     numerical_features: List[str] = []
     drop_columns: List[str] = []
