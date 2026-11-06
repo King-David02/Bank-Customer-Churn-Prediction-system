@@ -22,6 +22,7 @@ class RandomForestConfig(BaseModel):
     max_depth: int = 10
     min_samples_split: int = 2
     min_samples_leaf: int =5
+    class_weight: str = "balanced_subsample"
     max_features: str = "sqrt"
 
 class EnsembleConfig(BaseModel):
